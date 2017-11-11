@@ -22,10 +22,7 @@ Route::prefix('admin')->middleware('auth')->namespace('Back')->group(function ()
 	//Index admin
 	Route::name('admin')->get('/', 'AdminController@index');
 
-	//CRUD Video
-	Route::resource('videos', 'VideoController');
-
-	//CRUD Auto
+	//CRUD AutoAdmin
 	Route::prefix('auto')->namespace('Auto')->group(function () {
 		Route::name('auto.index')->get('{class}/index', 'AutoController@index');
 		Route::name('auto.create')->get('{class}/edit', 'AutoController@create');
