@@ -158,12 +158,12 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
         'name' => 'Demo',
         'items' => [
             [
-              'route' => route('auto.index', ['class' => 'Demo']),
+              'route' => route('auto.index', ['class' => 'demo']),
               'command' => 'Liste',
               'color' => 'blue',
             ],
             [
-              'route' => route('auto.edit', ['class' => 'Demo']),
+              'route' => route('auto.create', ['class' => 'demo']),
               'command' => 'Nouveau',
               'color' => 'yellow',
             ],

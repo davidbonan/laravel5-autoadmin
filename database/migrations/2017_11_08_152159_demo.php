@@ -14,7 +14,7 @@ class Demo extends Migration
     public function up()
     {
         Schema::create('demo', function(Blueprint $table) {
-            $table->increment('id')->primary();
+            $table->increments('id');
             $table->string('slug');
             $table->string('title');
             $table->string('description');
